@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 150vh;
+    font-family: 'Josefin Sans';
+}
+
+header img {
+    margin: 2rem;
+}
+
+.image-container img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+article {
+    text-align: center;
+}
+
+.content h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+}
+
+.content span {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: hsl(0, 36%, 70%);
+    margin-bottom: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.form-control ::placeholder {
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans';
+}
+
+.form-control input {
+    border-width: 1px;
+    border-color: hsl(0, 74%, 74%);
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    width: 85%;
+    position: relative;
+}
+
+.form-control button {
+    border-color: transparent;
+    background-color: hsl(0, 74%, 74%);
+    border-radius: 30px;
+    padding: 0.7rem 1.5rem;
+    position: absolute;
+    right: 2.3rem;
+}
+
+.form-control button:hover {
+    cursor: pointer;
+}
+
+.error-icon {
+    visibility: hidden;
+    position: absolute;
+    right: 7.5rem;
+    bottom: -13rem;
+}
+
+.form-control.error .error-icon {
+    visibility: visible;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    right: 12rem;
+    bottom: -15rem;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.success-message {
+    visibility: hidden;
+    position: absolute;
+    left: 7.5rem;
+    bottom: -16rem;
+    color: hsl(0, 36%, 70%);
+}
+
+.form-control.success .success-message{
+    visibility: visible;
+}
+
+
