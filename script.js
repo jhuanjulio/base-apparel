@@ -1,17 +1,9 @@
 const form = document.getElementById('form')
-// const submit = document.querySelector('button')
-
-// submit.addEventListener('click', function(e){
-//     const submitBtn = e.currentTarget.parentElement;
-//     submitBtn.classList.toggle('show-error')
-
-//     e.preventDefault()
-// })
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     
-    mainInput();
+    mainInput()
 })
 
 function mainInput() {

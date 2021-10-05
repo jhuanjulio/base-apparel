@@ -6,8 +6,14 @@
 }
 
 main {
-    height: 150vh;
+    max-height: 150vh;
     font-family: 'Josefin Sans';
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5rem;
 }
 
 header img {
@@ -42,6 +48,10 @@ article {
     margin-bottom: 2rem;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+}
+
+.form-control {
+    margin-bottom: 5rem;
 }
 
 .form-control ::placeholder {
@@ -104,6 +114,62 @@ article {
 
 .form-control.success .success-message{
     visibility: visible;
+}
+
+@media screen and (min-width: 1000px) {
+    .content-container {
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .left {
+        flex: 1;
+    }
+
+    .right {
+        flex: 1;
+    }
+
+    article {
+        text-align: left;
+        margin-right: 5rem;
+    }
+
+    .content p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form-control button {
+        border-color: transparent;
+        background-color: hsl(0, 74%, 74%);
+        border-radius: 30px;
+        padding: 0.7rem 1.5rem;
+        position: absolute;
+        left: 26rem;
+    }
+
+    .error-icon {
+        visibility: hidden;
+        position: absolute;
+        left: 23.8rem;
+        bottom: 8.8rem;
+    }
+
+    .form-control small {
+        visibility: hidden;
+        position: absolute;
+        left: 11rem;
+        bottom: 6.5rem;
+    }
+
+    .success-message {
+        visibility: hidden;
+        position: absolute;
+        left: 8rem;
+        bottom: 6.5rem;
+        color: hsl(0, 36%, 70%);
+    }
 }
 
 
